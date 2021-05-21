@@ -5,7 +5,7 @@
 
 ## How to compile?
 
-1. Run: `testbench/run-tests.sh`
+1. Run: `testbench/run_tests.sh`
   - The script automatically compile and create files under the `testbench/output/` folder. 
   - And will create `.vcd` files under the `testbench/vcd` folder.
 2. Done!
