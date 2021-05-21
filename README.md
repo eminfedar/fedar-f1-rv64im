@@ -5,10 +5,11 @@
 
 ## How to compile?
 
-1. Run: `testbench/run_tests.sh`
+1. Open a terminal in `testbench` folder.
+2. Run: `run_tests.sh`.
   - The script automatically compile and create files under the `testbench/output/` folder. 
   - And will create `.vcd` files under the `testbench/vcd` folder.
-2. Done!
+3. Done!
 
 Compilation requires `iverilog` verilog compiler.
 
