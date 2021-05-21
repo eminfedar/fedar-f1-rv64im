@@ -1,4 +1,4 @@
-# RV64IM CPU
+# Fedar F1
 5-Stage Pipelined (Fetch|Decode|Execute|Memory|Writeback) RV64IM RISC-V CPU in Verilog.
 
 ![Simulated GTKWave output of the CPU](https://raw.githubusercontent.com/eminfedar/rv64im-verilog/main/gtkwave-image.png)
