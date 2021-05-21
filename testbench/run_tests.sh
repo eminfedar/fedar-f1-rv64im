@@ -1,4 +1,8 @@
 #!/bin/bash
+if [ ! -d "./output" ]; then
+    mkdir output;
+fi
+
 echo "== Encoder Test ========================" &&
 iverilog -g2005-sv -I ../src/ -o output/tb_encoder tb_Encoder.v && vvp output/tb_encoder &&
 echo "== ALU Test ============================" &&
