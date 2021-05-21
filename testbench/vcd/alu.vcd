@@ -1,0 +1,172 @@
+$date
+	Fri May 21 16:40:12 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module tb_ALU $end
+$var wire 64 ! result [63:0] $end
+$var wire 1 " isEqual $end
+$var reg 64 # a [63:0] $end
+$var reg 64 $ b [63:0] $end
+$var reg 4 % op [3:0] $end
+$scope module alu $end
+$var wire 4 & OP [3:0] $end
+$var wire 64 ' X [63:0] $end
+$var wire 64 ( Y [63:0] $end
+$var wire 64 ) result [63:0] $end
+$var wire 1 " isEqual $end
+$var reg 64 * X_signed [63:0] $end
+$var reg 64 + Y_signed [63:0] $end
+$var reg 64 , result_reg [63:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1010 ,
+b101 +
+b101 *
+b1010 )
+b101 (
+b101 '
+b0 &
+b0 %
+b101 $
+b101 #
+1"
+b1010 !
+$end
+#200
+b110111 !
+b110111 )
+b110111 ,
+b1011 +
+b1000010 *
+b1 %
+b1 &
+b1011 $
+b1011 (
+0"
+b1000010 #
+b1000010 '
+#400
+b100 !
+b100 )
+b100 ,
+b110 +
+b101 *
+b10 %
+b10 &
+b110 $
+b110 (
+b101 #
+b101 '
+#600
+b111 !
+b111 )
+b111 ,
+b11 %
+b11 &
+#800
+b100 !
+b100 )
+b100 ,
+b10 +
+b110 *
+b100 %
+b100 &
+b10 $
+b10 (
+0"
+b110 #
+b110 '
+#1000
+b1000 !
+b1000 )
+b1000 ,
+b11 +
+b1 *
+b101 %
+b101 &
+b11 $
+b11 (
+b1 #
+b1 '
+#1200
+b10 !
+b10 )
+b10 ,
+b10 +
+b1000 *
+b110 %
+b110 &
+b10 $
+b10 (
+b1000 #
+b1000 '
+#1400
+b0 !
+b0 )
+b0 ,
+b101 +
+b110 *
+b111 %
+b111 &
+b101 $
+b101 (
+b110 #
+b110 '
+#1600
+b1111 !
+b1111 )
+b1111 ,
+b11 +
+b101 *
+b1000 %
+b1000 &
+b11 $
+b11 (
+0"
+b101 #
+b101 '
+#1800
+b1011010110 !
+b1011010110 )
+b1011010110 ,
+b1011 +
+b1000010 *
+b1001 %
+b1001 &
+b1011 $
+b1011 (
+b1000010 #
+b1000010 '
+#2000
+b10100 !
+b10100 )
+b10100 ,
+b11 +
+b111110 *
+b1010 %
+b1010 &
+b11 $
+b11 (
+b111110 #
+b111110 '
+#2200
+b1 !
+b1 )
+b1 ,
+b1001 +
+b1 *
+b1011 %
+b1011 &
+b1001 $
+b1001 (
+b1 #
+b1 '
+#2400

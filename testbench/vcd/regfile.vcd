@@ -1,0 +1,194 @@
+$date
+	Fri May 21 16:40:12 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module tb_RegFile $end
+$var wire 64 ! reg2_data [63:0] $end
+$var wire 64 " reg1_data [63:0] $end
+$var reg 5 # reg1 [4:0] $end
+$var reg 5 $ reg2 [4:0] $end
+$var reg 5 % reg_write [4:0] $end
+$var reg 64 & reg_write_data [63:0] $end
+$var reg 1 ' reg_write_enable $end
+$scope module regfile $end
+$var wire 5 ( R1 [4:0] $end
+$var wire 64 ) R1_DATA [63:0] $end
+$var wire 5 * R2 [4:0] $end
+$var wire 64 + R2_DATA [63:0] $end
+$var wire 5 , RD [4:0] $end
+$var wire 64 - RD_DATA [63:0] $end
+$var wire 1 ' WRITE_ENABLE $end
+$var integer 32 . i [31:0] $end
+$scope begin REG_DATAS[1] $end
+$var wire 64 / R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[2] $end
+$var wire 64 0 R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[3] $end
+$var wire 64 1 R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[4] $end
+$var wire 64 2 R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[5] $end
+$var wire 64 3 R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[6] $end
+$var wire 64 4 R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[7] $end
+$var wire 64 5 R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[8] $end
+$var wire 64 6 R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[9] $end
+$var wire 64 7 R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[10] $end
+$var wire 64 8 R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[11] $end
+$var wire 64 9 R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[12] $end
+$var wire 64 : R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[13] $end
+$var wire 64 ; R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[14] $end
+$var wire 64 < R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[15] $end
+$var wire 64 = R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[16] $end
+$var wire 64 > R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[17] $end
+$var wire 64 ? R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[18] $end
+$var wire 64 @ R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[19] $end
+$var wire 64 A R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[20] $end
+$var wire 64 B R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[21] $end
+$var wire 64 C R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[22] $end
+$var wire 64 D R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[23] $end
+$var wire 64 E R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[24] $end
+$var wire 64 F R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[25] $end
+$var wire 64 G R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[26] $end
+$var wire 64 H R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[27] $end
+$var wire 64 I R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[28] $end
+$var wire 64 J R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[29] $end
+$var wire 64 K R_DATA [63:0] $end
+$upscope $end
+$scope begin REG_DATAS[30] $end
+$var wire 64 L R_DATA [63:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 L
+b0 K
+b0 J
+b0 I
+b0 H
+b0 G
+b0 F
+b0 E
+b0 D
+b0 C
+b0 B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+b0 :
+b0 9
+b0 8
+b0 7
+b0 6
+b0 5
+b0 4
+b0 3
+b0 2
+b0 1
+b0 0
+b0 /
+b100000 .
+b0 -
+b0 ,
+b0 +
+b0 *
+b0 )
+b0 (
+0'
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#200
+b101 /
+1'
+b101 &
+b101 -
+b1 %
+b1 ,
+#400
+b1010 0
+b1010 &
+b1010 -
+b10 %
+b10 ,
+b101 "
+b101 )
+b1 #
+b1 (
+#600
+0'
+b0 &
+b0 -
+b0 %
+b0 ,
+b1010 !
+b1010 +
+b10 $
+b10 *
+#800

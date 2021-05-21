@@ -1,0 +1,71 @@
+$date
+	Fri May 21 16:40:12 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module tb_RAM $end
+$var wire 64 ! DATA_OUT [63:0] $end
+$var reg 10 " ADDRESS [9:0] $end
+$var reg 1 # CLK $end
+$var reg 64 $ DATA_IN [63:0] $end
+$var reg 1 % WRITE_ENABLE $end
+$scope module ram $end
+$var wire 10 & ADDRESS [9:0] $end
+$var wire 1 # CLK $end
+$var wire 64 ' DATA_IN [63:0] $end
+$var wire 64 ( DATA_OUT [63:0] $end
+$var wire 1 % WRITE_ENABLE $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 ) i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10000000000 )
+b110111 (
+b110111 '
+b1 &
+1%
+b110111 $
+1#
+b1 "
+b110111 !
+$end
+#200
+0#
+#400
+1#
+b1100011 $
+b1100011 '
+b1100011 !
+b1100011 (
+b10 "
+b10 &
+#600
+0#
+#800
+1#
+b0 $
+b0 '
+0%
+b110111 !
+b110111 (
+b1 "
+b1 &
+#1000
+0#
+#1200
+1#
+b1100011 !
+b1100011 (
+b10 "
+b10 &
+#1400
+0#
+#1600
