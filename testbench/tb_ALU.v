@@ -54,34 +54,46 @@ module tb_ALU;
         op = 6;
         #20;
 
+        // Shift Right Arithmetic
+        a = -8;
+        b = 2;
+        op = 7;
+        #20;
+
         // Multiply
         a = 6;
         b = 5;
-        op = 7;
+        op = 8;
         #20;
 
         // Multiply High
         a = 5;
         b = 3;
-        op = 8;
+        op = 9;
         #20;
 
         // Divide
         a = 66;
         b = 11;
-        op = 9;
+        op = 10;
         #20;
 
         // Remainder
         a = 62;
         b = 3;
-        op = 10;
+        op = 11;
         #20;
 
         // Signed Less Than
-        a = 1;
+        a = -1;
         b = 9;
-        op = 11;
+        op = 12;
+        #20;
+
+        // Unsigned Less Than
+        a = -1;
+        b = 9;
+        op = 13;
         #20;
     end
 
