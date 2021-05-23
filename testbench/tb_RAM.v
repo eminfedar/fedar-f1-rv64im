@@ -30,7 +30,7 @@ module tb_RAM;
         DATA_IN = 0;
         CLK = 1; #20; CLK = 0; #20;
 
-        // Read Again #1
+        // Read #2
         ADDRESS = 2;
         WRITE_ENABLE = 0;
         DATA_IN = 0;

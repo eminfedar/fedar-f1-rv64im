@@ -2,13 +2,11 @@
 
 `timescale 1ns / 100ps 
 
-module tb_Encoder;
+module tb_Encoders;
     reg [15:0] in = 0;
-    reg enable = 1;
     reg [3:0] out4;
     reg [2:0] out3;
     reg [1:0] out2;
-    reg hasValue;
 
     Encoder_16 enc(in, out4);
     Encoder_8 enc8(in[7:0], out3);
@@ -40,8 +38,8 @@ module tb_Encoder;
     end
 
     initial begin
-        $dumpfile("vcd/encoder.vcd");
-        $dumpvars(0, tb_Encoder);
+        $dumpfile("vcd/encoders.vcd");
+        $dumpvars(0, tb_Encoders);
     end
 
 endmodule
