@@ -3,7 +3,7 @@
 
 Fedar F1 is a 5-Stage Pipelined (Fetch|Decode|Execute|Memory|Writeback) RV64IM RISC-V Core written fully in Verilog.
 
-![Simulated GTKWave output of the CPU](https://raw.githubusercontent.com/eminfedar/rv64im-verilog/main/gtkwave-image.png)
+![Simulated GTKWave output of the CPU](https://raw.githubusercontent.com/eminfedar/fedar-f1-rv64im/main/gtkwave-image.png)
 
 ## How to compile?
 
