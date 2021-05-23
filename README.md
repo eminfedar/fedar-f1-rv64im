@@ -1,14 +1,17 @@
-# RV64IM CPU
-5-Stage Pipelined (Fetch|Decode|Execute|Memory|Writeback) RV64IM RISC-V CPU in Verilog.
+# Fedar F1
+[![LibreCores](https://www.librecores.org/eminfedar/fedar-f1-rv64im/badge.svg?style=flat)](https://www.librecores.org/eminfedar/fedar-f1-rv64im)
 
-![Simulated GTKWave output of the CPU](https://raw.githubusercontent.com/eminfedar/rv64im-verilog/main/gtkwave-image.png)
+Fedar F1 is a 5-Stage Pipelined (Fetch|Decode|Execute|Memory|Writeback) RV64IM RISC-V Core written fully in Verilog.
+
+![Simulated GTKWave output of the CPU](https://raw.githubusercontent.com/eminfedar/fedar-f1-rv64im/main/gtkwave-image.png)
 
 ## How to compile?
 
-1. Run: `testbench/run_tests.sh`
+1. Open a terminal in `testbench` folder.
+2. Run: `run_tests.sh`.
   - The script automatically compile and create files under the `testbench/output/` folder. 
   - And will create `.vcd` files under the `testbench/vcd` folder.
-2. Done!
+3. Done!
 
 Compilation requires `iverilog` verilog compiler.
 
