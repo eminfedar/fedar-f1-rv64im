@@ -1,5 +1,5 @@
 $date
-	Fri May 21 19:21:32 2021
+	Mon May 24 15:33:45 2021
 $end
 $version
 	Icarus Verilog
@@ -8,12 +8,12 @@ $timescale
 	100ps
 $end
 $scope module tb_RegFile $end
-$var wire 64 ! reg2_data [63:0] $end
-$var wire 64 " reg1_data [63:0] $end
-$var reg 5 # reg1 [4:0] $end
-$var reg 5 $ reg2 [4:0] $end
-$var reg 5 % reg_write [4:0] $end
-$var reg 64 & reg_write_data [63:0] $end
+$var wire 64 ! R2_data [63:0] $end
+$var wire 64 " R1_data [63:0] $end
+$var reg 5 # R1 [4:0] $end
+$var reg 5 $ R2 [4:0] $end
+$var reg 5 % RD [4:0] $end
+$var reg 64 & RD_DATA [63:0] $end
 $var reg 1 ' reg_write_enable $end
 $scope module regfile $end
 $var wire 5 ( R1 [4:0] $end
