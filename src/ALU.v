@@ -29,7 +29,4 @@ module ALU(
             13: result_reg <= (X < Y ? 1 : 0); // set less than (sltu)
         endcase
     end
-
-    
-
 endmodule
