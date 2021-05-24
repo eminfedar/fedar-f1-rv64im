@@ -2,43 +2,43 @@
 `timescale 1ns / 100ps 
 
 module tb_RegFile;
-    reg [4:0]reg1;
-    reg [4:0]reg2;
-    reg [4:0]reg_write;
-    reg [63:0]reg_write_data;
+    reg [4:0]R1;
+    reg [4:0]R2;
+    reg [4:0]RD;
+    reg [63:0]RD_DATA;
     reg reg_write_enable;
 
-    wire [63:0]reg1_data;
-    wire [63:0]reg2_data;
+    wire [63:0]R1_data;
+    wire [63:0]R2_data;
 
-    RegFile regfile(reg1, reg2, reg_write, reg_write_data, reg_write_enable, reg1_data, reg2_data );
+    RegFile regfile(R1, R2, RD, RD_DATA, reg_write_enable, R1_data, R2_data );
 
     initial begin
-        reg1 = 0;
-        reg2 = 0;
-        reg_write = 0;
-        reg_write_data = 0;
+        R1 = 0;
+        R2 = 0;
+        RD = 0;
+        RD_DATA = 0;
         reg_write_enable = 0;
         #20;
 
-        reg1 = 0;
-        reg2 = 0;
-        reg_write = 1;
-        reg_write_data = 5;
+        R1 = 0;
+        R2 = 0;
+        RD = 1;
+        RD_DATA = 5;
         reg_write_enable = 1;
         #20;
 
-        reg1 = 1;
-        reg2 = 0;
-        reg_write = 2;
-        reg_write_data = 10;
+        R1 = 1;
+        R2 = 0;
+        RD = 2;
+        RD_DATA = 10;
         reg_write_enable = 1;
         #20;
 
-        reg1 = 1;
-        reg2 = 2;
-        reg_write = 0;
-        reg_write_data = 0;
+        R1 = 1;
+        R2 = 2;
+        RD = 0;
+        RD_DATA = 0;
         reg_write_enable = 0;
         #20;
     end
