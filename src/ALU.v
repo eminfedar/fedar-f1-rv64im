@@ -6,8 +6,7 @@ module ALU(
     output [63:0] OUTPUT,
     output isEqual
 );
-    reg [63:0] RESULT;
-    reg [127:0] RESULT_MULH;
+    reg [127:0] RESULT;
 
     wire signed [63:0] X_signed = X;
     wire signed [63:0] Y_signed = Y;
@@ -25,7 +24,7 @@ module ALU(
             6:  RESULT <= X >> Y; // shift right logical
             7:  RESULT <= X_signed >>> Y; // shift right arithmetic
             8:  RESULT <= X * Y; // mul
-            9:  RESULT_MULH <= X * Y; // mulh
+            9:  RESULT <= X * Y; // mulh
             10: RESULT <= X / Y; // div
             11: RESULT <= X % Y; // rem
             12: RESULT <= (X_signed < Y_signed ? 1 : 0); // set less than (slt)
@@ -33,6 +32,6 @@ module ALU(
         endcase
     end
 
-    assign OUTPUT = OP == 9 ? RESULT_MULH[127:64] : RESULT;
+    assign OUTPUT = OP == 9 ? RESULT[127:64] : RESULT[63:0];
 
 endmodule
