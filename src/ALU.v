@@ -1,11 +1,14 @@
 module ALU(
-    input [63:0]X,
-    input [63:0]Y,
-    input [3:0]OP,
+    input [63:0] X,
+    input [63:0] Y,
+    input [3:0] OP,
 
-    output reg [63:0]result_reg,
+    output [63:0] OUTPUT,
     output isEqual
 );
+    reg [63:0] RESULT;
+    reg [127:0] RESULT_MULH;
+
     wire signed [63:0] X_signed = X;
     wire signed [63:0] Y_signed = Y;
 
@@ -13,20 +16,23 @@ module ALU(
 
     always @(*) begin
         case (OP)
-            0:  result_reg <= X + Y; // add
-            1:  result_reg <= X - Y; // sub
-            2:  result_reg <= X & Y; // and
-            3:  result_reg <= X | Y; // or
-            4:  result_reg <= X ^ Y; // xor
-            5:  result_reg <= X << Y; // shift left logical
-            6:  result_reg <= X >> Y; // shift right logical
-            7:  result_reg <= X_signed >>> Y; // shift right arithmetic
-            8:  result_reg <= X * Y; // mul
-            9:  result_reg <= X * Y; // mulh will be implemented
-            10: result_reg <= X / Y; // div
-            11: result_reg <= X % Y; // rem
-            12: result_reg <= (X_signed < Y_signed ? 1 : 0); // set less than (slt)
-            13: result_reg <= (X < Y ? 1 : 0); // set less than (sltu)
+            0:  RESULT <= X + Y; // add
+            1:  RESULT <= X - Y; // sub
+            2:  RESULT <= X & Y; // and
+            3:  RESULT <= X | Y; // or
+            4:  RESULT <= X ^ Y; // xor
+            5:  RESULT <= X << Y; // shift left logical
+            6:  RESULT <= X >> Y; // shift right logical
+            7:  RESULT <= X_signed >>> Y; // shift right arithmetic
+            8:  RESULT <= X * Y; // mul
+            9:  RESULT_MULH <= X * Y; // mulh
+            10: RESULT <= X / Y; // div
+            11: RESULT <= X % Y; // rem
+            12: RESULT <= (X_signed < Y_signed ? 1 : 0); // set less than (slt)
+            13: RESULT <= (X < Y ? 1 : 0); // set less than (sltu)
         endcase
     end
+
+    assign OUTPUT = OP == 9 ? RESULT_MULH[127:64] : RESULT;
+
 endmodule
